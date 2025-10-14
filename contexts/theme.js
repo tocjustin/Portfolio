@@ -7,11 +7,12 @@ const ThemeProvider = ({ children }) => {
   const [themeName, setThemeName] = useState('light')
 
   useEffect(() => {
-    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    setThemeName(
-      localStorage.getItem('themeName') ||
-        (darkMediaQuery.matches ? 'dark' : 'light')
-    )
+    if (typeof window !== 'undefined') {
+      const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+      const savedTheme = localStorage.getItem('themeName')
+      const preferredTheme = darkMediaQuery.matches ? 'dark' : 'light'
+      setThemeName(savedTheme || preferredTheme)
+    }
   }, [])
 
   const toggleTheme = () => {

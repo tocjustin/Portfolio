@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState, useCallback } from 'react'
 import { ThemeContext } from '../contexts/theme'
 import { about, projects, skills, contact } from '../data/portfolio'
 import CloseIcon from '@material-ui/icons/Close'
@@ -18,10 +18,10 @@ const Navbar = () => {
     setShowNavList(!showNavList)
   }
 
-  const hideNavListOverlay = () => {
+  const hideNavListOverlay = useCallback(() => {
     document.body.classList.remove('disable-scroll')
     setShowNavList(false)
-  }
+  }, [])
 
   useEffect(() => {
     const hideNavListOverlayIfScreenTooBig = () =>
@@ -29,7 +29,7 @@ const Navbar = () => {
     window.addEventListener('resize', hideNavListOverlayIfScreenTooBig)
     return () =>
       window.removeEventListener('resize', hideNavListOverlayIfScreenTooBig)
-  }, [])
+  }, [hideNavListOverlay])
 
   return (
     <nav className='nav container animate__animated animate__fadeIn animate__delay-5s'>

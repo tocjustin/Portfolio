@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect } from 'react'
 import { ThemeContext } from '../contexts/theme'
 import Header from '../components/Header'
 import About from '../components/About'
@@ -10,7 +10,6 @@ import Footer from '../components/Footer'
 
 function App() {
   const [{ themeName }] = useContext(ThemeContext)
-  const rootRef = useRef(null)
 
   useEffect(() => {
     const oldThemeName = themeName === 'dark' ? 'light' : 'dark'
@@ -18,18 +17,10 @@ function App() {
     document.body.classList.add(themeName)
   }, [themeName])
 
-  useEffect(() => {
-    window.setTimeout(() => {
-      rootRef.current?.style.removeProperty('pointer-events')
-    }, 5000)
-  }, [])
-
   return (
     <div
-      ref={rootRef}
       className='app'
       id='top'
-      style={{ pointerEvents: 'none' }}
     >
       <Header />
 

@@ -1,4 +1,3 @@
-import uniqid from 'uniqid'
 import Hyphenated from 'react-hyphen'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
@@ -44,8 +43,8 @@ const About = () => {
           {description && (
             <div className='about__desc paragraph__list'>
               <Hyphenated>
-                {description.map((item) => (
-                  <p key={uniqid()}>{item}</p>
+                {description.map((item, index) => (
+                  <p key={`about-desc-${index}`}>{item}</p>
                 ))}
                 {/* fragments added to prevent react-hyphen error when description length < 2 */}
                 <></>

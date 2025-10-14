@@ -6,7 +6,26 @@ export default function Document() {
     <Html lang='en'>
       <Head>
         <meta charSet='utf-8' />
-        <meta name='description' content='Portfolio' />
+        <meta name='description' content='Justin To - Software Developer passionate about game development, web development, and building user-friendly applications. Specializing in C++, C#, Python, and modern web technologies.' />
+        <meta name='keywords' content='Justin To, Software Developer, Game Developer, Web Developer, C++, Unreal Engine, React, TypeScript' />
+        <meta name='author' content='Justin To' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+        {/* Open Graph / Facebook */}
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://justinto.dev/' />
+        <meta property='og:title' content='Justin To - Software Developer' />
+        <meta property='og:description' content='Software Developer passionate about game development, web development, and building user-friendly applications.' />
+        <meta property='og:image' content='https://justinto.dev/og-image.jpg' />
+
+        {/* Twitter */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://justinto.dev/' />
+        <meta property='twitter:title' content='Justin To - Software Developer' />
+        <meta property='twitter:description' content='Software Developer passionate about game development, web development, and building user-friendly applications.' />
+        <meta property='twitter:image' content='https://justinto.dev/og-image.jpg' />
+
+        <link rel='canonical' href='https://justinto.dev/' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
           rel='preconnect'

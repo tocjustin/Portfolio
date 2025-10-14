@@ -6,7 +6,7 @@ const about = {
   role: 'Software Developer',
   company: '',
   description: [
-    'As a passionate software, game, and web developer, I love making games for people to enjoy, intuitive and beutiful websites, and user-friendly useful apps. My goal is to create digital solutions that people love to use and that make a difference. Also interested in Cybersecurity and AI.',
+    'As a passionate software, game, and web developer, I love making games for people to enjoy, intuitive and beautiful websites, and user-friendly useful apps. My goal is to create digital solutions that people love to use and that make a difference. Also interested in Cybersecurity and AI.',
   ],
   resume: 'https://justinto.dev/resume.pdf',
   social: {
@@ -20,6 +20,7 @@ const projects = [
   // if the array is left empty, the "Projects" section won't render
   // each element in each `description` array will be treated as a separate paragraph
   {
+    id: 'valiant',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Valiant',
     description: [
@@ -29,6 +30,7 @@ const projects = [
     livePreview: 'https://store.steampowered.com/app/2468650/Valiant/',
   },
   {
+    id: 'apocalypse-rising',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Apocalypse Rising',
     description: [
@@ -38,6 +40,7 @@ const projects = [
     livePreview: '',
   },
   {
+    id: 'eternal-life',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Eternal Life',
     description: [
@@ -47,6 +50,7 @@ const projects = [
     livePreview: '',
   },
   {
+    id: 'apothecary-night',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Apothecary Night',
     description: [
@@ -56,6 +60,7 @@ const projects = [
     livePreview: '',
   },
   {
+    id: 'valoblox',
     thumbnail: 'images/fixed_glide.png',
     name: 'Valoblox',
     description: [
@@ -65,6 +70,7 @@ const projects = [
     livePreview: 'https://www.roblox.com/games/9818210203/Nexus',
   },
   {
+    id: 'daydream',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Daydream',
     description: [
@@ -75,6 +81,7 @@ const projects = [
     livePreview: '',
   },
   {
+    id: 'sentinel',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Sentinel',
     description: [
@@ -104,6 +111,7 @@ const projects = [
     livePreview: '',
   },*/
   {
+    id: 'auto-zone',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Auto Zone',
     description: [
@@ -114,6 +122,7 @@ const projects = [
     livePreview: '',
   },
   {
+    id: 'anti-phishing-outlook',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Anti-Phishing Outlook Extension',
     description: [
@@ -131,6 +140,7 @@ const skills = [
   'C++',
   'C#',
   'C',
+  'Python',
   'Lua',
   'HTML',
   'CSS',

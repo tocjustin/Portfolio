@@ -1,15 +1,20 @@
-import uniqid from 'uniqid'
+import PropTypes from 'prop-types'
+import Image from 'next/image'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
 
 const ProjectCard = ({ project }) => (
   <div className='project'>
     {project.thumbnail && (
-      <img
-        className='project__thumbnail'
-        src={project.thumbnail}
-        alt='thumbnail'
-      />
+      <div className='project__thumbnail'>
+        <Image
+          src={`/${project.thumbnail}`}
+          alt={project.name || 'Project thumbnail'}
+          width={300}
+          height={200}
+          layout='responsive'
+        />
+      </div>
     )}
 
     <div className='project__info'>
@@ -17,16 +22,16 @@ const ProjectCard = ({ project }) => (
 
       {project.description && (
         <div className='project__description paragraph__list'>
-          {project.description.map((item) => (
-            <p key={uniqid()}>{item}</p>
+          {project.description.map((item, index) => (
+            <p key={`${project.id}-desc-${index}`}>{item}</p>
           ))}
         </div>
       )}
 
       {project.stack && (
         <ul className='project__stack'>
-          {project.stack.map((item) => (
-            <li key={uniqid()} className='project__stack-item'>
+          {project.stack.map((item, index) => (
+            <li key={`${project.id}-stack-${index}`} className='project__stack-item'>
               {item}
             </li>
           ))}
@@ -61,5 +66,17 @@ const ProjectCard = ({ project }) => (
     </div>
   </div>
 )
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.arrayOf(PropTypes.string),
+    stack: PropTypes.arrayOf(PropTypes.string),
+    sourceCode: PropTypes.string,
+    livePreview: PropTypes.string,
+  }).isRequired,
+}
 
 export default ProjectCard
