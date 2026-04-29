@@ -31,7 +31,7 @@ function App() {
         <Contact />
       </main>
 
-      <div className='animate__animated animate__fadeIn animate__delay-5s'>
+      <div className='animate__animated animate__fadeIn animate__delay-1s'>
         <ScrollToTop />
       </div>
 

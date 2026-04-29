@@ -32,7 +32,7 @@ const Navbar = () => {
   }, [hideNavListOverlay])
 
   return (
-    <nav className='nav container animate__animated animate__fadeIn animate__delay-5s'>
+    <nav className='nav container animate__animated animate__fadeIn'>
       <ul
         className='nav__list'
         style={{ display: showNavList ? 'flex' : null }}

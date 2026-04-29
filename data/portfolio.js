@@ -4,6 +4,7 @@ const about = {
   name: 'Justin To',
   greetingEmoji: '👋',
   role: 'Software Developer',
+  profilePic: '/images/profile.jpg',
   company: '',
   description: [
     'As a passionate software, game, and web developer, I love making games for people to enjoy, intuitive and beautiful websites, and user-friendly useful apps. My goal is to create digital solutions that people love to use and that make a difference. Also interested in Cybersecurity and AI.',
@@ -24,7 +25,7 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Valiant',
     description: [
-      'A first person tactile shooter game within Unreal Engine',
+      'A fast-paced first-person tactical shooter built in Unreal Engine 5. Led all gameplay and networking programming, shipping the title on Steam.',
     ],
     stack: ['C++', 'Lead Programmer', 'UE5', 'Git', 'Networking', 'UI', 'Gameplay'],
     livePreview: 'https://store.steampowered.com/app/2468650/Valiant/',
@@ -34,7 +35,7 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Apocalypse Rising',
     description: [
-      'A third person open world survival game within Unreal Engine',
+      'A third-person open-world survival game built in Unreal Engine 5. Responsible for core gameplay systems, AI, and world interactions.',
     ],
     stack: ['C++', 'Lead Programmer', 'UE5', 'Git'],
     livePreview: '',
@@ -44,7 +45,7 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Eternal Life',
     description: [
-      'A top down MMO ARPG game within Unreal Engine',
+      'A top-down massively multiplayer online action RPG built in Unreal Engine 5, featuring real-time combat and persistent world systems.',
     ],
     stack: ['C++', 'Lead Programmer', 'UE5', 'Git'],
     livePreview: '',
@@ -54,7 +55,7 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Apothecary Night',
     description: [
-      'A first person horror game within Unity',
+      'A first-person atmospheric horror game built in Unity featuring environmental storytelling, puzzle mechanics, and dynamic lighting.',
     ],
     stack: ['C#', 'Lead Programmer', 'Unity', 'Git'],
     livePreview: '',
@@ -64,7 +65,7 @@ const projects = [
     thumbnail: 'images/fixed_glide.png',
     name: 'Valoblox',
     description: [
-      'A first person shooter game within Roblox Studio with over 100 concurrent players and 500k visits',
+      'A first-person shooter on Roblox inspired by tactical games, reaching over 500k visits and 100+ concurrent players. Built with custom networking and a SQL-backed leaderboard.',
     ],
     stack: ['Lua', 'Lead Programmer', 'Roblox Studio', 'SQL'],
     livePreview: 'https://www.roblox.com/games/9818210203/Nexus',
@@ -74,7 +75,7 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Daydream',
     description: [
-      'A productivity app within Android Studio',
+      'A productivity and task-management Android app with intuitive UX, local data persistence, and notification scheduling.',
     ],
     stack: ['Kotlin', 'Android Studio'],
     sourceCode: 'https://github.com/tocjustin/Daydream',
@@ -85,37 +86,17 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Sentinel',
     description: [
-      'A discord bot to manage discord servers',
+      'A feature-rich Discord bot for server moderation and management, with a SQL database backend hosted on AWS for persistent configuration.',
     ],
     stack: ['Python', 'SQL', 'AWS'],
     livePreview: '',
   },
-  /*{
-    thumbnail: 'images/placeholder-image.jpeg',
-    name: 'Utopia',
-    description: [
-      'An Instagram Clone built in React',
-    ],
-    stack: ['JavaScript', 'CSS', 'TypeScript', 'React'],
-    sourceCode: '',
-    livePreview: '',
-  },
-  {
-    thumbnail: 'images/placeholder-image.jpeg',
-    name: 'Nexus',
-    description: [
-      'An Amazon Clone built in Next.js',
-    ],
-    stack: ['JavaScript', 'CSS', 'TypeScript', 'React'],
-    sourceCode: '',
-    livePreview: '',
-  },*/
   {
     id: 'auto-zone',
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Auto Zone',
     description: [
-      'A car buying website',
+      'A full-featured car marketplace website with browsing, filtering, and listing capabilities built with a modern React and TypeScript frontend.',
     ],
     stack: ['JavaScript', 'CSS', 'TypeScript', 'React'],
     sourceCode: '',
@@ -126,7 +107,7 @@ const projects = [
     thumbnail: 'images/placeholder-image.jpeg',
     name: 'Anti-Phishing Outlook Extension',
     description: [
-      'Designed and developed an Outlook add-in extension that enhances email security by detecting phishing emails',
+      'An Outlook add-in that analyzes incoming emails in real time to detect and flag phishing attempts, helping users identify malicious content before acting on it.',
     ],
     stack: ['Python', 'JavaScript', 'CSS', 'HTML'],
     sourceCode: 'https://github.com/Dpenate-AD23/AntiPhish-Outlook',

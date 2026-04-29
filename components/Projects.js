@@ -6,7 +6,7 @@ const Projects = () => {
 
   return (
     <section
-      className='section projects animate__animated animate__fadeIn animate__delay-5s'
+      className='section projects animate__animated animate__fadeIn animate__delay-1s'
       id='projects'
     >
       <h2 className='section__title'>Projects</h2>

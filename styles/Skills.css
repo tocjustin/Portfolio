@@ -2,12 +2,24 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 0.2rem;
 }
 
 .skills__list-item {
-  margin: 0.5rem;
+  margin: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1.5px solid var(--clr-primary);
+  color: var(--clr-primary);
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .skills__list-item:hover {
-  cursor: auto;
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  cursor: default;
+  transform: translateY(-2px);
 }
